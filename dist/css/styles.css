@@ -6,14 +6,17 @@
     grid-template-columns: repeat(5, 1fr);
     justify-items: stretch;
     align-items: stretch;
+    grid-gap: 1em;
 }
 
 .inner2{
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
 .inner1{
     grid-template-columns: 1fr;
+    grid-row-gap: 1em;
 }
 
 .gallery-2{
@@ -45,4 +48,10 @@ grid-column: 4/6;
 }
 .from1-4{
 grid-column: 1/4;
+}
+
+@media only screen and (max-width : 960px) {
+    body{
+        color: red;
+    }
 }
